@@ -1,0 +1,120 @@
+body {
+    font-size: 1rem;
+    font-family: 'Karla',sans-serif;
+    margin: 0;
+    padding: 0;
+    opacity: .8;
+    
+}
+main {
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    background-color: hsl(204, 43%, 93%)
+}
+section{
+    width:22rem;
+    
+}
+h1{ 
+    color: hsl(179, 62%, 43%);
+    font-weight: 700;
+}
+h3 {
+    margin-top:0;
+    padding-top: 1rem;
+}
+.containerTop,
+.containerMiddle,
+.containerBottom {
+    box-sizing: border-box;
+    padding-left: 2rem;
+    padding-right: 1rem;
+}
+.containerTop{
+    background-color:white;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+
+}
+.containerTop h3 {
+    color: hsl(71, 73%, 54%);
+}
+.containerTop p {
+    opacity: 0.4;
+    line-height: 1.5rem;
+}
+.containerMiddle{
+    background-color:hsl(179, 62%, 43%);
+    color: white;
+}
+.priceContainer  {
+    display: flex;
+    gap: 1rem;
+    align-items: center;}
+.price{
+    font-size: 2rem;
+    margin: 0;
+    font-weight:700 ;
+}
+
+.priceContainer p:nth-of-type(2){
+    opacity: 0.6;
+    margin: 0;
+}
+#pAccess{
+    word-spacing: .2rem;
+}
+button{
+    width:90%;
+    background-color: hsl(71, 73%, 54%);
+    border-radius: .5rem;
+    padding: 1rem;
+    border: none;
+    box-shadow: 1px 1px 10px 5px rgba(128, 128, 128, .4);
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    margin-bottom:1.5rem;
+    
+
+}
+.containerBottom{
+    background-color: hsla(179, 62%, 43%, 0.5);
+    color: white;
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    padding-bottom: .1rem;
+}
+.containerBottom p{
+    opacity: .6;
+    margin:.1rem 0;
+    
+}
+.containerBottom p:nth-last-of-type(1){
+    margin-bottom: 1rem;
+}
+@media only screen and (min-width:701px){
+    .containerTop {
+        width: 44rem;
+        padding-right: 8rem;
+    }
+    .mediaScreen{
+        display: flex;
+    }
+    .containerBottom{
+        border-bottom-left-radius: 0rem;
+    }
+    .containerMiddle {
+        border-bottom-left-radius: .5rem;
+    }
+    button{
+        margin-top: 0;
+    }
+
+
+
+}
